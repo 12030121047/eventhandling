@@ -1,0 +1,25 @@
+package com.example.event;
+
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class EventActivity extends Activity {
+	private Button click;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_event);
+    
+        click = (Button) findViewById(R.id.btnClick);
+        click.setText("Proceed");
+        click.setTextColor(Color.GREEN);
+        click.setBackgroundColor(Color.YELLOW);
+        click.setTextSize((float)12.3);
+
+    
+    }
+    
+}

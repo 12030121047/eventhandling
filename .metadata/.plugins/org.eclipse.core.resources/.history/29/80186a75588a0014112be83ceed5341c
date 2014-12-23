@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventActivity" >
+
+    <editText
+        android:id="@+id/editString"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:text="TextView" />
+    
+    
+
+    <RadioButton
+        android:id="@+id/uCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uCase" />
+
+    <RadioButton
+        android:id="@+id/lCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lCase" />
+
+    
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+package com.example.event;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.Button;
+
+public class EventActivity extends Activity {
+	private Button click;
+	private EditText name;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_event);
+    
+        click = (Button) findViewById(R.id.btnClick);
+        name = (EditText) findViewById(R.id.editUsername);
+        
+        
+        OnClickListener listener = new OnClickListener() {
+        	@Override
+        	public void onClick(View v){
+        		clicl.setText(name.getText());
+        		        		
+        }
+     
+    };
+    click.setOnClickListener(listener);
+    }
+    
+}

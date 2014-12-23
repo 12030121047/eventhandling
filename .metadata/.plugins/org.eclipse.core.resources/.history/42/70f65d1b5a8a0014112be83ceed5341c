@@ -1,0 +1,51 @@
+package com.example.event;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class EventActivity extends Activity {
+	private EditText editString;
+	private RadioGroup rgCase;
+	private TextView txtString;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_event);
+    
+        editString = (EditText) findViewById(R.id.editString);
+        rgCase = (RadioGroup) findViewById(R.id.rgCase);
+        txtString = (TextView) findViewById(R.id.txtString);
+        
+        OnCheckedListener listener = new OnCheckedChangeListener()
+        {
+        	
+        	@Override
+        	public void OnCheckedChanged(RadioGroup group,int checkedID)
+        	{
+        		Switch(radioButtonId)
+        		{
+        			case R.id.lCase;
+        			txtString.setText(editString.getText().toString().toLowerCase());
+        			break;
+        			case R.id.uCase;
+    			txtString.setText(editString.getText().toString().toLowerCase());
+    			break;
+        		}
+        	
+       
+        		        		
+        }
+     
+    };
+    rgCase.setOnCheckedChangeListener(listener);
+    }
+    
+}

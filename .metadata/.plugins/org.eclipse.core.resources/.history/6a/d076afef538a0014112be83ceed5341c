@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation=""
+    tools:context=".EventActivity" >
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username" />
+
+    <RadioGroup
+        android:id="@+id/btnClick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+
+    <RadioButton
+        android:id="@+id/rgClick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:text="LowerCase" />
+
+    <RadioButton
+        android:id="@+id/uClick3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UpperCase" />
+    
+    <RadioButton
+        android:id="@+id/lClick3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UpperCase" />
+    
+</RadioGroup>
+<TextView
+    android:id="@+id/txtString"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+</LinearLayout>
